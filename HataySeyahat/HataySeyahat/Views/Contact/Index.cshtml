@@ -1,0 +1,54 @@
+﻿@using HataySeyahat.Models.Siniflar
+@model List<iletisim>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<div class="contact">
+	<div class="wrap">
+						<div class="contact-top">
+						<h3>İletişim Bilgileri</h3>
+						<p></p>
+						</div>
+					<div class="form">
+	                	<form class="cmxform" id="contactForm" method="post">
+		                <div>
+							<input type="text" class="textbox" value="Ad Soyad:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'AdSoyad';}">
+						</div>
+						<div>
+							<input type="text" class="textbox" value="Mail:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mail';}">
+						</div>
+						<div>
+							<input type="text" class="textbox" value="Konu:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Konu';}">
+						</div>
+		               <div>
+						  	<p><span class="read">Submit</span></p>
+					   </div>
+	              </form>
+           	 </div>
+           	 	<div class="form1">
+           	 				<div>
+				<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mesaj';}">Mesaj:</textarea>
+			</div>
+		    </div>
+		    <div class="clear"></div>
+		     <div class="contact-bottom">
+		        <div class="contact-left">
+		        	 <div class="contact-add">
+						<h3>Adres</h3>
+						<p> Antakya/Hatay</p>	
+						<p>Telefon:1-23-5555</p>
+						<p>Fax:1-23-4567</p>
+						<p>Mail:<a href="mailto:signup@gmail.com">tufekfatih31@gmail.com</a></p>
+					</div>
+				</div>
+		         <div class="contact-map">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821901.4779546957!2d35.678281502433784!3d36.42001728755613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1525f31774ce652b%3A0x9be32962060d1ed3!2sHatay!5e0!3m2!1str!2str!4v1653255538339!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		         </div>
+		         <div class="clear"></div>
+           	 </div>
+			 <div class="clear"></div>
+		</div>
+</div>
+

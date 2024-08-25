@@ -1,0 +1,110 @@
+﻿@using HataySeyahat.Models.Siniflar
+@model List<Blog>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<body>
+    <div class="header-banner">
+        <div class="wrap">
+            <div class="banner">
+                <div class="indent">
+                    <h2 class="indent-left margin-bot" style="margin-left:110px"> Hatay Seyahat Rehberim </h2>
+                    @*<div class="banner-left">
+                        <div class="con-text">
+                            <div class="grid1-img">
+                                <img src="~/web/images/glass.png" alt="">
+                            </div>
+                            <div class="grid1-desc">
+                                <p>Restaurantlar</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="con-text">
+                            <div class="grid1-img">
+                                <img src="~/web/images/flight.png" alt="">
+                            </div>
+                            <div class="grid1-desc">
+                                <p>Uçuşlar</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="con-text">
+                            <div class="grid1-img">
+                                <img src="~/web/images/group.png" alt="">
+                            </div>
+                            <div class="grid1-desc">
+                                <p>Yapılacaklar</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="con-text">
+                            <div class="grid1-img">
+                                <img src="~/web/images/key.png" alt="">
+                            </div>
+                            <div class="grid1-desc">
+                                <p>Araba Kirala</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>*@
+                    <div class="header_bottom_right_images">
+
+                        <div class="slider"style="width:100%;height:auto;">
+                            <ul class="rslides" id="slider1">
+                                @foreach (var x in Model)
+                                {
+
+
+                                <li><img src="@x.BlogImage" alt=""></li>
+                                @*<li><img src="~/web/images/img2.jpg" alt=""></li>
+                                <li><img src="~/web/images/img3.jpg" alt=""></li>
+                                <li><img src="~/web/images/img4.jpg" alt=""></li>*@
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class"content">
+        <div class="wrap">
+            <div class="wrapper">
+                <div class="con-top">
+                    <h3>Hatay'ın Tarihi</h3>
+                    <p style="font-size:15px;">
+                        Hatay Türkiye'nin en önemli eski yerleşim yerlerinden biridir. Yapılan arkeolojik araştırmalarda milattan önce 100.000 ile 40.000 yılları arasına tarihlenen bulgulara ulaşılmıştır. İl toprakları ilk Tunç Çağından itibaren Akat Beyliği ve M.Ö. 1800-1600 yılları arasında Yamhad Krallığına bağlı bir beyliğin sınırları içerisinde yer almıştır. Daha sonra MÖ 17. yüzyıl sonlarında Hititlerin ve MÖ 1490 yıllarında Mısır'ın egemenliğine girmiştir. Ardından Urartular, Asurlular ve Persler'in egemenliğine girdi.
+
+                        MÖ 300 yılında Antakya kurulmuş ve kent hızla gelişmiştir. Kent MÖ 64 yılında Roma İmparatorluğu'na katılmış ve İmparatorluğun Suriye eyaletinin başkenti olmuştur. İslam ordusu tarafından fethedilmiş, Emevi ve Abbasi egemenliğinde kalmıştır. Daha sonra 877'de Tolunoğulları'nın fethettiği topraklar sırayla; Ihşitler ve Selçuklular tarafından yıkılan Halep merkezli Hamdanoğulları (Beni Hamdan/Hamdânîler) egemenliğine girdi. 969 yılında Bizans İmparatorluğunun topraklarına katılan İl, 11-12.yüzyıllarda Haçlı Seferleri sırasında da önemli rol oynamıştır. Antakya Memlûk Devleti tarafından Haçlıların elinden alınmıştır. (18 Mayıs 1268)
+
+                        1516'da Yavuz Sultan Selim bu toprakları fethetmiş ve Osmanlı İmparatorluğu dönemi başlamıştır. Memlûk Devletinden zapt edilen Antakya, Osmanlı İmparatorluğu'nda önce Halep'e bağlı bir sancak ve daha sonra kaza olarak yönetilmiştir. Bu dönemde Antakya, Asi Nehri ile Habib Neccar Dağı arasındaki dar ve meyilli alanda, 1,5–2 km²'lik bir alan üzerine yerleşmiş orta büyüklükte bir şehirdi. Osmanlı İmparatorluğu'nun Hatay'daki hakimiyeti 1918 yılına kadar devam etti. 3 Temmuz 1938'de Türk ve Fransız heyetleri arasında yapılan antlaşma ile Hatay'da eşit sayıda olacak şekilde toplam 5000 kişilik Türk ve Fransız askeri gücü konuşlandırıldı. Bu şekilde Hatay'ın statüsü korunmuş oldu. Türk Ordusu 4 Temmuz 1938'de Hatay'a girerek görevine başladı. Seçimler ile oluşturulan Hatay Meclisi 2 Eylül 1938'de toplanarak bağımsız Hatay Cumhuriyeti'ni ilan etti. Cumhurbaşkanlığına Tayfur Sökmen, Başbakanlığa ise Abdurrahman Melek seçildiAnkara’da, Fransa ile Türkiye arasında, 23 Haziran 1939 tarihinde “Türkiye ile Suriye Arasında Toprak Sorunlarının Kesinlikle Çözümüne İlişkin Antlaşma”nın imzalanması  ile Fransa, Hatay’ın Türkiye’ye katılmasını kabul etmesiyle, Hatay Devlet Meclisi, 29 Haziran 1939 tarihinde oy birliği ile Türkiye Cumhuriyeti'ne iltihak kararı aldı.[9] Türkiye ise, 7 Temmuz 1939 günü çıkarılan bir yasa ile "Hatay" ilini kurarak bağlanma işlemini sonuçlandırdı. 23 Temmuz 1939'da Fransız Birlikleri Hatay'ı terk ettiler.
+                    </p>
+                </div>
+                @Html.Action("Partial1","Default")
+                <div class="grids">
+                    <div class="box1">
+                        @Html.Action("Partial3","Default")
+                        @Html.Action("Partial4","Default")
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
